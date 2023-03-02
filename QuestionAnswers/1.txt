@@ -15,3 +15,9 @@
 15.How downcasting is possible in Java?
 16.What is the purpose of a private constructor?
 17.What is object cloning?
+
+18. Does contructor have a return value?
+      Yes, it is the current class instance
+
+19. Can constructor perform other tasks instead of initialization?
+      Yes, constructor can perform tasks like method calling, object creation, starting a thread etc. 

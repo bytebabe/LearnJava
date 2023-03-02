@@ -1,0 +1,17 @@
+1. Can we overload the main method?
+2. A Java Constructor returns a value but, what?
+3. Can we create a program without main method?
+4. What are the six ways to use this keyword?
+5. Why is multiple inheritance not supported in Java?
+6. Why use aggregation?
+7. Can we override the static method?
+8. What is the covariant return type?
+9. What are the three usages of Java super keyword?
+10.Why use instance initializer block?
+11.What is the usage of a blank final variable?
+12.What is a marker or tagged interface?
+13.What is runtime polymorphism or dynamic method dispatch?
+14.What is the difference between static and dynamic binding?
+15.How downcasting is possible in Java?
+16.What is the purpose of a private constructor?
+17.What is object cloning?

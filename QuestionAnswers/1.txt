@@ -1,23 +1,58 @@
 1. Can we overload the main method?
-2. A Java Constructor returns a value but, what?
-3. Can we create a program without main method?
-4. What are the six ways to use this keyword?
-5. Why is multiple inheritance not supported in Java?
-6. Why use aggregation?
-7. Can we override the static method?
-8. What is the covariant return type?
-9. What are the three usages of Java super keyword?
-10.Why use instance initializer block?
-11.What is the usage of a blank final variable?
-12.What is a marker or tagged interface?
-13.What is runtime polymorphism or dynamic method dispatch?
-14.What is the difference between static and dynamic binding?
-15.How downcasting is possible in Java?
-16.What is the purpose of a private constructor?
-17.What is object cloning?
+    Yes, we can overload main method. It can be done by method overloading. But, the JVM will only execute the main() with the String[] parameter passed to it. 
 
-18. Does contructor have a return value?
-      Yes, it is the current class instance
+2. A Java Constructor returns a value but, what?
+    Java constructors return the current class instance value.
+
+3. Can we create a program without main method?
+    No, we cannot create a program without main method in Java since main method is the entery point to the program and it is required by the JVM to start the program.
+
+4. What are the six ways to use this keyword?
+    this can be used to refer current class instance variable.
+    this can be used to invoke current class method (implicitly)
+    this() can be used to invoke current class constructor.
+    this can be passed as an argument in the method call.
+    this can be passed as argument in the constructor call.
+    this can be used to return the current class instance from the method.
+
+5. Why is multiple inheritance not supported in Java?
+    Multiple inheritance is not supported in Java because it causes ambiguity as to which method is being invoked during complie time. 
+Let is consider the sub class C extends from both class A and B. The class C calls a method foo() which is present in both A and B. During complie time, JVM confuses as to which foo() should be called? from class A from class B? 
+
+6. Why use aggregation?
+    Aggregation is a oop concept under Java Inheritance. It follows a "Has-a" relationship. Aggregation is used when a class has a entity refernce to make. 
+Let us consider a employee example where every employee has his/her name, id, email and addrees. Now this address has a set of information like city, state, country, zipcode, street.. etc. The address can become a seperate entity and the main employee class can use this address entity as a reference whenever needed. Like an employee "Has-a" addrees. 
+
+7. Can we override the static method?
+    No. we cannot override static method. 
+
+8. What is the covariant return type?
+
+9. What are the three usages of Java super keyword?
+    super can be used to refer to immediate parent class varible 
+    super can be used to refer to immediate parent class method
+    super() can be used to call immediate parent class constructor
+
+10.Why use instance initializer block?
+
+11.What is the usage of a blank final variable?
+    It is useful when we want a create a varible which is initialised at the time of object creation and one initialised, the value must not be changed. 
+
+12.What is a marker or tagged interface?
+
+13.What is runtime polymorphism or dynamic method dispatch?
+    It is a process in which a call to an overridden method is resolved in run-time, rather than compile time 
+
+14.What is the difference between static and dynamic binding?
+
+15.How downcasting is possible in Java?
+
+16.What is the purpose of a private constructor?
+
+17.What is object cloning?
 
 19. Can constructor perform other tasks instead of initialization?
       Yes, constructor can perform tasks like method calling, object creation, starting a thread etc. 
+
+20. Multiple inheritance is not supported through class in java, but it is possible by an interface, why?
+       Multiple inheritance is not supported in the case of class because of ambiguity.   However, it is supported in case of an interface because there is no ambiguity. It is because its implementation is provided by the implementation class.

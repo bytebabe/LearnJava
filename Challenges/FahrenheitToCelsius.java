@@ -8,10 +8,10 @@ public class FahrenheitToCelsius {
 
         String[] fahrenheit = input.split("/");
 
-        int f = Integer.parseInt(fahrenheit[0]);
+        int a = Integer.parseInt(fahrenheit[0]);
         int b = Integer.parseInt(fahrenheit[1]);
 
-        int c = (int) Math.round((f - 32) * 5.0 / 9.0 * b);
+        int c = (int) Math.round((5 * a - 32 * 5 *b) / 9.0 * b);
         int gcd = gcd(c, b);
 
         System.out.println(c / gcd + "/" + b / gcd);
